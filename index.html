@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Goal Shop</title>
-    <link rel="shortcut icon" href="img/shopico.ico" type="image/x-icon">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Goal Shop</title>
+     <link rel="shortcut icon" href="img/shopico.ico" type="image/x-icon">
  </head>
  <body>
      <header>
-         <div id="logo">
-             <span>
-                 <a href="index.html">Your Football Shop</a>
-             </span>
-         </div>
+         <h1>Goal Shop</h1>
+         <h2>Choose your football style</h2>
          <nav>
-             <ul>
+             <ul class="top-menu">
                  <li>
-                   <a href="#footballboots">Football Boots</a>
+                    <a href="">Home</a>
                  </li>
                  <li>
-                   <a href="#cloth">Cloth</a>
-                 </li>
-                 <li>
-                   <a href="#accesories">Accesories</a>
+                   <a href="#products">Products</a>
                  </li>
                  <li>
                    <a href="#feedback">Feedback</a>
@@ -37,33 +31,119 @@
             <img src="img/bootsshop.jpg" alt="footballbootsnike">
          </div>   
      </header>
+     <hr>
      <main>
-         <section id="footballboots">
-            
-         </section>
-         <section id="cloth">
-            
-         </section>
-         <section id="accesories">
-            
-         </section>
-         <section id="feedback">
-            
-         </section>
+         <div id="brands">
+             <p>We will help you to choose your football equipment of the world's best brands!</p>
+             <img src="img/nikelogo.png" alt="nikelogo">
+             <img src="img/adidaslogo.png" alt="adidaslogo">
+             <img src="img/pumalogo.png" alt="pumalogo">
+         </div>
+         <hr>
+         <h2 id="products">Products</h2>
+         <div class="product-list">
+             <div id="boots">
+                 <h3> Footbal boots</h3>
+                 <div class="product-card">
+                     <h4>Nike Mercurial V.5</h4>
+                     <img src="img/nikemercurial.jpg" alt="bootsnikemercurial">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+                 <h3>Futsal shoes</h3>
+                 <div class="product-card">
+                     <h4>Nike Mercurial</h4>
+                     <img src="img/futsalmercurial.jpg" alt="futsalnikemercurial">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+             </div>
+             <div id="clothing">
+                 <h3>T-Shirts</h3>
+                 <div class="product-card">
+                     <h4>Nike T-Shirts</h4>
+                     <img src="img/tshirtnike.jpg" alt="nike-tshirts">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+                 <h3>Shorts</h3>
+                 <div class="product-card">
+                     <h4>Adidas Shorts</h4>
+                     <img src="img/shortsadidas" alt="adidas-shorts">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+                 <h3>Pants</h3>
+                 <div class="product-card">
+                     <h4>Nike Pants</h4>
+                     <img src="img/pantsnike.jpg" alt="nike-pants">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+                 <h3>Jacket</h3>
+                 <div class="product-card">
+                     <h4>Nike Jacket</h4>
+                     <img src="img/jacketnike.jpg" alt="nike-jacket">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+             </div>    
+             <div id="accesories">
+                 <h3>Bags & Backpacks</h3>
+                 <div class="product-card">
+                     <h4>Nike bag</h4>
+                     <img src="img/backpacknike.jpg" alt="nike-bag">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+                 <h3>Socks</h3>
+                 <div class="product-card">
+                     <h4>Nike socks</h4>
+                     <img src="img/socksnike.jpg" alt="nike-socks">
+                     <div class="button-container">
+                         <button class="button card-button">Info</button>
+                         <button class="button card-button">Buy</button>
+                     </div>
+                 </div>
+             </div>
+         </div>     
      </main>
+     <hr>
      <footer>
-         <div id="contacts">
-             <h1>Write your question</h1>
+         <div id="feedback">
+             <p>Do not hesitate to ask:</p>
              <form action="https://formspree.io/xzbgjkvz" method="POST">
                  <input type="text" placeholder="Name">
                  <br>
                  <input type="email" placeholder="Email">      
                  <br>
-                 <textarea placeholder="Massage"></textarea>
+                 <textarea placeholder="Message"></textarea>
                  <br>
                  <input type="submit" value="Send">
              </form>
-         </div>   
+         </div>
+         <hr>
+         <h2 id="contacts">Contacts</h2>
+         <ul>
+             <li>G-mail</li>
+             <li>Facebook</li>
+             <li>Instagram</li>
+             <li>Location</li>
+         </ul>    
      </footer>
  </body>
 </html>
