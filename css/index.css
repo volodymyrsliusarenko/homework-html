@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Titillium+Web&display=swap');
+
+ :root {
+    --main-color: black;
+    --secondary-color: white;
+    font-family: "Titillium Web";
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+header nav h1 {
+    font-family: "Raleway";
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header nav .top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+header nav .top-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .top-menu a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 550px ) {
+    header nav {
+        display: flex;
+    }
+
+    header nav .top-menu {
+        flex: 1;
+    }
+}
+main .product-list .product-card .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 580px) {
+    main .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    main .product-list {
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
+}
+
+@media (min-width: 980px) {
+    main .product-list {
+        grid-template-columns: repeat(4, 1fr);  
+    }
+}
+
+header div {
+    background-image: url(../img/adidascover.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px; 
+}
+
+main div #slogan {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+main .brands img {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1rf;
+    }
+
+main .product-list .product-card img {
+    display: block;
+    width: 100%;
+}
